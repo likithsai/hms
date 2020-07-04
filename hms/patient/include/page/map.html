@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet mobile example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    html, body, #map {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    navigator.geolocation.getCurrentPosition( function(location) {
+	
+		var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+
+		var mymap = L.map('map').locate({setView: true, maxZoom: 13});
+	
+		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
+			maxZoom: 18,
+			tileSize: 512,
+			zoomOffset: -1
+		}).addTo(mymap);
+
+		var marker = L.marker(latlng).addTo(mymap);
+		
+		
+		
+		
+		function onLocationFound(e) {
+			var radius = e.accuracy;
+
+			L.marker(e.latlng).addTo(map)
+				.bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+			L.circle(e.latlng, radius).addTo(map);
+		}
+		
+		function onLocationError(e) {
+			alert(e.message);
+		}
+		
+		map.on('locationerror', onLocationError);
+		map.on('locationfound', onLocationFound);
+		
+	});
+  </script>
+</body>
+</html> 
