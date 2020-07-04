@@ -204,13 +204,13 @@ function getDocDetails(val) {
 		FormElements.init();
 	});
 
-	$('.datepicker').datepicker({
-		format: 'yyyy-mm-dd',
-		startDate: '-3d'
-	});
+	//$('.datepicker').datepicker({
+	//	format: 'yyyy-mm-dd',
+	//	startDate: '-3d'
+	//});
 
-	$('.selectpicker').selectpicker({
-	showSubtext:true
-	});
+	//$('.selectpicker').selectpicker({
+	//showSubtext:true
+	//});
 </script>
 

@@ -34,7 +34,7 @@
 				<li class="<?php if($_GET['page'] == "addStore" || $_GET['page'] == "manageStore" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-medkit"></i></div>
 							<div class="item-inner">
 								<span class="title"> Stores</span><i class="icon-arrow"></i>
 							</div>
@@ -56,7 +56,7 @@
 				<li class="<?php if($_GET['page'] == "addCustomer" || $_GET['page'] == "manageCustomer" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-user"></i></div>
 							<div class="item-inner">
 								<span class="title"> Customer</span><i class="icon-arrow"></i>
 							</div>
@@ -83,7 +83,7 @@
 				<li class="<?php if($_GET['page'] == "addMedicines" || $_GET['page'] == "manageMedicines" || $_GET['page'] == "medicineCategory" || $_GET['page'] == "outOfStock" || $_GET['page'] == "expired" || $_GET['page'] == "addSupplier" || $_GET['page'] == "manageSupplier" || $_GET['page'] == "addManufacturer" || $_GET['page'] == "manageManufacturer" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-medkit"></i></div>
 							<div class="item-inner">
 								<span class="title"> Medicines </span><i class="icon-arrow"></i>
 							</div>
@@ -126,7 +126,7 @@
 				<li class="<?php if($_GET['page'] == "newInvoice" || $_GET['page'] == "manageInvoice" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-files-o"></i></div>
 							<div class="item-inner">
 								<span class="title"> Invoice </span><i class="icon-arrow"></i>
 							</div>
@@ -149,7 +149,7 @@
 				<li class="<?php if($_GET['page'] == "newOrders" || $_GET['page'] == "manageOrders" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-shopping-cart"></i></div>
 							<div class="item-inner">
 								<span class="title"> Orders</span><i class="icon-arrow"></i>
 							</div>
@@ -195,9 +195,9 @@
 				<li class="<?php if($_GET['page'] == "search") { echo "active"; } else { echo ""; } ?>">
 					<a href="dashboard.php?page=search">
 						<div class="item-content">
-							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-media"><i class="fa fa-search"></i></div>
 							<div class="item-inner">
-								<span class="title"> Search</span><i class="icon-arrow"></i>
+								<span class="title"> Search</span>
 							</div>
 						</div>
 					</a>

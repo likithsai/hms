@@ -357,7 +357,7 @@ var Main = function() {
 			popoverHandler();
 			resizeHandler();
 			showTabHandler();
-			panelScrollHandler();
+			//panelScrollHandler();
 			panelToolsHandler();
 			customSelectHandler();
 			goTopHandler();

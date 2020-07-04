@@ -1,6 +1,9 @@
 
 <?php
 
+	include('../../include/config.php');
+    include('../../include/checklogin.php');
+	
 	$msg = "";
 	
 	if(isset($_POST['submit'])) {   

@@ -50,7 +50,7 @@
 						<div class="item-content">
 							<div class="item-media"><i class="ti-list"></i></div>
 							<div class="item-inner">
-								<span class="title"> Medical History &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="badge bg-success border"><?php echo $medical_history; ?></span></span>
+								<span class="title"> Medical History</span></span>
 							</div>
 						</div>
 					</a>
@@ -59,7 +59,7 @@
 				<li class="<?php if($_GET['page'] == "search") { echo "active"; } else { echo ""; } ?>">
 					<a href="dashboard.php?page=search">
 						<div class="item-content">
-							<div class="item-media"><i class="ti-list"></i></div>
+							<div class="item-media"><i class="fa fa-search"></i></div>
 							<div class="item-inner">
 								<span class="title"> Search </span>
 							</div>
