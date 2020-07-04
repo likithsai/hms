@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-                <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary">Submit</button>
+                <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary btn-purple">Submit</button>
             </form>
         </div>
 

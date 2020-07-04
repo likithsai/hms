@@ -33,25 +33,30 @@
     <div class="container-fluid container-fullw bg-white">
 
         <div class="row">
-            <form method="POST" enctype="multipart/form-data">
-                
-                <div class="form-group">
-                    <label for="doctorname">Manufacturer Name : </label>
-                    <input type="text" name="manufacturer_name" class="form-control" required="true">
-                </div>
+			<div class="panel panel-white no-radius box-shadow">
+				<div class="panel-body">
+					<form method="POST" enctype="multipart/form-data">
+						
+						<div class="form-group">
+							<label for="doctorname">Manufacturer Name : </label>
+							<input type="text" name="manufacturer_name" class="form-control" required="true">
+						</div>
 
-                <div class="form-group">
-                    <label for="doctorname">Manufacturer Mobile : </label>
-                    <input type="number" name="manufacturer_mobile" class="form-control" required="true">
-                </div>
+						<div class="form-group">
+							<label for="doctorname">Manufacturer Mobile : </label>
+							<input type="number" name="manufacturer_mobile" class="form-control" required="true">
+						</div>
 
-                <div class="form-group">
-                    <label for="doctorname">Manufacturer Address : </label>
-                    <textarea class="form-control" name="manufacturer_address" rows="10" cols="10"></textarea>
-                </div>
+						<div class="form-group">
+							<label for="doctorname">Manufacturer Address : </label>
+							<textarea class="form-control" name="manufacturer_address" rows="10" cols="10"></textarea>
+						</div>
 
-                <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary">Submit</button>
-            </form>
+						<button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary btn-purple">Submit</button>
+					</form>
+				</div>
+			</div>
+
         </div>
 
     </div>

@@ -39,6 +39,7 @@
     <div class="container-fluid container-fullw bg-white">
 
         <div class="row">
+			
             <form method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="doctorname">Customer Name : </label>
@@ -65,7 +66,7 @@
                     <input type="file" name="image" class="form-control"  placeholder="Upload File" required="required">
                 </div>
 
-                <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary">Submit</button>
+                <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary btn-purple">Submit</button>
             </form>
         </div>
 

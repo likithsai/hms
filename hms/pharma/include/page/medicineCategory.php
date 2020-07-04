@@ -28,7 +28,7 @@
 	<div class="col-md-12">
 		<div class="row">
 			<div class="col-lg-12 col-md-12">
-				<div class="panel panel-white">
+				<div class="panel panel-white no-radius box-shadow" style="margin-top: 10px;">
 					<div class="panel-body">
 						<p style="color:red;"><?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?></p>	
 						<form role="form" name="dcotorspcl" method="post">
@@ -37,12 +37,12 @@
 							    <input type="text" name="medical_category" class="form-control"  placeholder="Enter Medical Category">
 							</div>
                             
-                            <button type="submit" name="submit" class="col-md-12 btn btn-primary">Add Medicine Category</button>
+                            <button type="submit" name="submit" class="col-md-12 btn btn-primary btn-purple">Add Medicine Category</button>
 						</form>
 					</div>
 				</div>
 				
-				<div class="panel panel-white">
+				<div class="panel panel-white no-radius box-shadow">
 					<div class="panel-body">
 						<div class="col-md-12">
 							<table class="table table-hover table-striped" id="sample-table-1">

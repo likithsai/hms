@@ -154,7 +154,7 @@ function getDocDetails(val) {
 										<input type="time" class="form-control" name="apptime" id="timepicker1" required="required">eg : 10:00 PM
 									</div>														
 																
-									<button type="submit" name="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
+									<button type="submit" name="submit" class="col-md-12 col-sm-12 btn btn-o btn-primary btn-purple">Submit</button>
 								</form>
 							</div>
 						</div>

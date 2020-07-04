@@ -143,7 +143,7 @@
 								<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password" required="required">
 							</div>
 														
-							<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
+							<button type="submit" name="submit" id="submit" class="col-md-12 col-sm-12 btn btn-o btn-primary btn-purple">Submit</button>
 						</form>
 					</div>
 				</div>
