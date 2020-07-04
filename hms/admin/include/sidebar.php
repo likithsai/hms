@@ -16,7 +16,7 @@
 				<li class="<?php if($_GET['page'] == "doctorSpecialization" || $_GET['page'] == "addDoctor" || $_GET['page'] == "manageDoctor") { echo "active"; } else { echo ""; } ?>" >
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="ti-user"></i></div>
+							<div class="item-media"><i class="fa fa-medkit"></i></div>
 							<div class="item-inner">
 								<span class="title"> Doctors </span><i class="icon-arrow"></i>
 							</div>
@@ -72,6 +72,52 @@
 					</ul>
 				</li>	
 
+				<li class="<?php if($_GET['page'] == "addStore" || $_GET['page'] == "manageStore" ) { echo "active"; } else { echo ""; } ?>">
+					<a href="javascript:void(0)">
+						<div class="item-content">
+							<div class="item-media"><i class="fa fa-home"></i></div>
+							<div class="item-inner">
+								<span class="title"> Stores</span><i class="icon-arrow"></i>
+							</div>
+						</div>
+					</a>
+								
+					<ul class="sub-menu">			
+						<li class="<?php if($_GET['page'] == "addStore") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=addStore"><span class="title"> Add Store </span></a>
+						</li>
+									
+						<li class="<?php if($_GET['page'] == "manageStore") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=manageStore"><span class="title"> Manage Store</span></a>
+						</li>		
+	
+					</ul>
+				</li>
+				
+				
+				<li class="<?php if($_GET['page'] == "addClinic" || $_GET['page'] == "manageClinic" ) { echo "active"; } else { echo ""; } ?>">
+					<a href="javascript:void(0)">
+						<div class="item-content">
+							<div class="item-media"><i class="fa fa-calendar"></i></div>
+							<div class="item-inner">
+								<span class="title"> Clinic</span><i class="icon-arrow"></i>
+							</div>
+						</div>
+					</a>
+								
+					<ul class="sub-menu">			
+						<li class="<?php if($_GET['page'] == "addClinic") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=addClinic"><span class="title"> Add Clinic </span></a>
+						</li>
+									
+						<li class="<?php if($_GET['page'] == "manageClinic") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=manageClinic"><span class="title"> Manage Clinic</span></a>
+						</li>		
+	
+					</ul>
+				</li>
+				
+				
 				<li class="<?php if($_GET['page'] == "createGroup" || $_GET['page'] == "manageGroup") { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
@@ -127,22 +173,12 @@
 						<div class="item-content">
 							<div class="item-media"><i class="ti-search"></i></div>
 							<div class="item-inner">
-								<span class="title"> Patient Search </span>
+								<span class="title"> Search </span>
 							</div>
 						</div>
 					</a>
 				</li>	
 				
-				<li class="<?php if($_GET['page'] == "systemDetails") { echo "active"; } else { echo ""; } ?>">
-					<a href="dashboard.php?page=systemDetails">
-						<div class="item-content">
-							<div class="item-media"><i class="ti-search"></i></div>
-							<div class="item-inner">
-								<span class="title"> System Details </span>
-							</div>
-						</div>
-					</a>
-				</li>
 			</ul>
 			<!-- end: CORE FEATURES -->
 		</nav>

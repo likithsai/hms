@@ -13,8 +13,8 @@
 		<link rel="stylesheet" href="../vendor/themify-icons/themify-icons.min.css">
 		<!--<link rel="stylesheet" href="../vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">-->
 		<link rel="stylesheet" href="../assets/css/styles.css">
-		<link rel="stylesheet" href="../assets/css/plugins.css">
-		<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />
+		<!--<link rel="stylesheet" href="../assets/css/plugins.css">-->
+		<!--<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />-->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 

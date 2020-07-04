@@ -1,7 +1,8 @@
 <?php
+
 	session_start();
-	
 	include( '../include/config.php' );
+	
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
 		<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/css/styles.css">
-		<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />
+		<!--<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />-->
 		<script src="../vendor/jquery/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 		

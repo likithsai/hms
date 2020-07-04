@@ -13,8 +13,8 @@
 		<link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../vendor/themify-icons/themify-icons.min.css">
 		<link rel="stylesheet" href="../assets/css/styles.css">
-		<link rel="stylesheet" href="../assets/css/plugins.css">
-		<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />
+		<!--<link rel="stylesheet" href="../assets/css/plugins.css">-->
+		<!--<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" /> -->
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
 	</head>
 	<body>
@@ -92,6 +92,22 @@
 									include('include/page/systemDetails.php');	
 									break;
 									
+								case 'addStore':
+									include('include/page/addStores.php');
+									break;
+									
+								case 'manageStore':
+									include('include/page/manageStores.php');
+									break;
+									
+								case 'addClinic':
+									include('include/page/addClinic.php');
+									break;
+									
+								case 'manageClinic':
+									include('include/page/manageClinic.php');
+									break;
+									
 							}
 							
 						?>
@@ -106,7 +122,7 @@
 		<!-- start: CLIP-TWO JAVASCRIPTS -->
 		<script src="../assets/js/main.js"></script>
 		<!-- start: JavaScript Event Handlers for this page -->
-		<script src="../assets/js/form-elements.js"></script>
+		<!-- <script src="../assets/js/form-elements.js"></script> -->
 		<script>
 			jQuery(document).ready(function() {
 				Main.init();

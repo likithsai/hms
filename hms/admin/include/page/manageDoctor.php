@@ -29,11 +29,11 @@
 		<table class="table table-hover table-striped" id="sample-table-1">
 		    <thead>
 				<tr>
-					<th class="text-center" style="background: #007aff; color: white;">#</th>
-					<th class="text-center" style="background: #007aff; color: white;">Doctor Name</th>
-					<th class="text-center" style="background: #007aff; color: white;">Specialization</th>
-					<th class="text-center" style="background: #007aff; color: white;">Creation Date </th>
-					<th class="text-center" style="background: #007aff; color: white;">Action</th>							
+					<th class="text-center btn-purple" style="color: white;">#</th>
+					<th class="text-center btn-purple" style="color: white;">Doctor Name</th>
+					<th class="text-center btn-purple" style="color: white;">Specialization</th>
+					<th class="text-center btn-purple" style="color: white;">Creation Date </th>
+					<th class="text-center btn-purple" style="color: white;">Action</th>							
 				</tr>
 			</thead>
 			<tbody>

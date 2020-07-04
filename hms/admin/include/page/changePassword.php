@@ -59,7 +59,7 @@
 	<div class="col-md-12">
         <div class="row margin-top-30">
 		    <div class="col-lg-12 col-md-12">
-			    <div class="panel panel-white">
+			    <div class="panel panel-white no-radius box-shadow">
 				    <div class="panel-body">
 						<p style="color:red;"><?php echo htmlentities($_SESSION['msg1']);?><?php echo htmlentities($_SESSION['msg1']="");?></p>	
 						<form role="form" name="chngpwd" method="post" onSubmit="return valid();">
@@ -78,7 +78,7 @@
 								<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password">
 							</div>
 														
-							<button type="submit" name="submit" class="btn btn-o btn-primary">Submit</button>
+							<button type="submit" name="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
 						</form>
 					</div>
                 </div>

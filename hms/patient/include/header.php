@@ -7,7 +7,7 @@
 		</a>
 						
 		<a class="navbar-brand" href="#">
-			<h2 style="padding-top:20% ">HMS</h2>
+			<h2 style="padding-top:20%; color: #fff; ">HMS</h2>
 		</a>
 						
 						

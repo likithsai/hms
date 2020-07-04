@@ -36,7 +36,7 @@
     <div class="col-md-12">
 		<div class="row margin-top-30">
 		    <div class="col-lg-12 col-md-12">
-			    <div class="panel panel-white">
+			    <div class="panel panel-white no-radius box-shadow">
 				    <div class="panel-heading">
 						<h5 class="panel-title">Change Password</h5>
 					</div>
@@ -59,7 +59,7 @@
 								<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password" required>
 							</div>
 														
-							<button type="submit" name="submit" class="btn btn-o btn-primary">Submit</button>
+							<button type="submit" name="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
 						</form>
 					</div>
 				</div>

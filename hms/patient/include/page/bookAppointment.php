@@ -108,43 +108,14 @@ function getDocDetails(val) {
 			<div class="col-md-7">								
 				<div class="row margin-top-30">
 					<div class="col-lg-12 col-md-12">
-						<div class="panel panel-white">
-							<!-- <div class="panel-heading">
-								<h5 class="panel-title">Book Appointment</h5>
-							</div>
-														-->
+						<div class="panel panel-white no-radius box-shadow">
+							
 							<div class="panel-body">
 								<p style="color:red;">
 									<?php echo htmlentities($_SESSION['msg1']);?>
 									<?php echo htmlentities($_SESSION['msg1']="");?>
 								</p>	
 								<form role="form" name="book" method="post" >
-									<!-- <div class="form-group ">
-									<label>Minimal</label>
-									<select onChange="getdoctors(this.value);"  class="selectpicker form-control" data-live-search="true" title="Search title or description...">
-										<option data-thumbnail="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-21-copy-6753651837108786-law.gif" data-subtext="description 1">Alaska</option>
-										<option data-thumbnail="images/icon-chrome.png" data-subtext="description 2">California</option>
-										<option data-thumbnail="images/icon-chrome.png" data-subtext="description 3">Delaware</option>
-										<option data-thumbnail="images/icon-chrome.png" data-subtext="description 4">Tennessee</option>
-										<option data-thumbnail="images/icon-chrome.png" data-subtext="description 5">Texas</option>
-										<option data-thumbnail="images/icon-chrome.png" data-subtext="description 6">Washington</option>
-									</select>
-
-
-
-									<select id="doc" class="selectpicker" data-show-subtext="true">
-										<option data-subtext="description 2">Expert PHP</option>
-											<option>Demo PHP</option>
-											<option>PHP Tutorials</option>
-											<option>PHP Framework</option>
-											<option>PHP Libraries</option>
-											<option>HTML</option>
-											<option>CSS</option>
-											<option>JS</option>
-											<option>MySQL</option>
-									</select>
-									
-								</div> -->
 
 									<div class="form-group">
 										<label for="DoctorSpecialization">Doctor Specialization</label>
@@ -183,7 +154,7 @@ function getDocDetails(val) {
 										<input type="time" class="form-control" name="apptime" id="timepicker1" required="required">eg : 10:00 PM
 									</div>														
 																
-									<button type="submit" name="submit" class="btn btn-o btn-primary">Submit</button>
+									<button type="submit" name="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
 								</form>
 							</div>
 						</div>

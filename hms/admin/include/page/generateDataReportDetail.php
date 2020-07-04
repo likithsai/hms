@@ -10,20 +10,16 @@
             $tdate = $_POST['todate'];
         ?>
 		
-		<div class="alert alert-info">
-		  <h5 align="center" style="color:blue">Report from <?php echo $fdate?> to <?php echo $tdate?></h5>
-		</div>
-	
         <table class="table table-hover table-striped" id="sample-table-1">
             <thead>
                 <tr>
-                    <th class="text-center" style="background: #007aff; color: white;">#</th>
-                    <th class="text-center" style="background: #007aff; color: white;">Patient Name</th>
-                    <th class="text-center" style="background: #007aff; color: white;">Patient Contact Number</th>
-                    <th class="text-center" style="background: #007aff; color: white;">Patient Gender </th>
-                    <th class="text-center" style="background: #007aff; color: white;">Creation Date </th>
-                    <th class="text-center" style="background: #007aff; color: white;">Updation Date </th>
-                    <th class="text-center" style="background: #007aff; color: white;">Action</th>
+                    <th class="text-center btn-purple" style="color: white;">#</th>
+                    <th class="text-center btn-purple" style="color: white;">Patient Name</th>
+                    <th class="text-center btn-purple" style="color: white;">Patient Contact Number</th>
+                    <th class="text-center btn-purple" style="color: white;">Patient Gender </th>
+                    <th class="text-center btn-purple" style="color: white;">Creation Date </th>
+                    <th class="text-center btn-purple" style="color: white;">Updation Date </th>
+                    <th class="text-center btn-purple" style="color: white;">Action</th>
                 </tr>
             </thead>
             <tbody>

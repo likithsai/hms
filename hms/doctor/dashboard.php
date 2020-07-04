@@ -1,9 +1,5 @@
-<?php
-	
-	session_start();
-	
+<?php	
 	include( '../include/config.php' );
-	
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +12,8 @@
 		<link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../vendor/themify-icons/themify-icons.min.css">
 		<link rel="stylesheet" href="../assets/css/styles.css">
-		<link rel="stylesheet" href="../assets/css/plugins.css">
-		<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />
+		<!--<link rel="stylesheet" href="../assets/css/plugins.css">-->
+		<!--<link rel="stylesheet" href="../assets/css/themes/theme-1.css" id="skin_color" />-->
 
 
 	</head>
@@ -102,7 +98,7 @@ case 'manageClinic':
 		<!-- <script src="../vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
 		<!-- <script src="../vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script> -->
 		<script src="../assets/js/main.js"></script>
-		<script src="../assets/js/form-elements.js"></script>
+		<!-- <script src="../assets/js/form-elements.js"></script> -->
 		<script>
 			jQuery(document).ready(function() {
 			

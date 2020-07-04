@@ -35,7 +35,7 @@
 				?>
 				
 				
-				<div class="panel panel-white" style="border: 1px solid #ccc;">
+				<div class="panel panel-white no-radius box-shadow" style="border: 1px solid #ccc;">
 					<div class="panel-body">
 						<p style="color:red;"><?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?></p>	
 						<form role="form" name="dcotorspcl" method="post">
@@ -44,7 +44,7 @@
 							    <input type="text" name="doctorspecilization" class="form-control"  placeholder="Enter Doctor Specialization">
 							</div>
                             
-                            <button type="submit" name="submit" class="btn btn-o btn-primary">Add Specialization</button>
+                            <button type="submit" name="submit" class="btn btn-o btn-primary btn-purple">Add Specialization</button>
 						</form>
 					</div>
 				</div>
@@ -59,11 +59,11 @@
 		<table class="table table-hover table-striped" id="sample-table-1">
 			<thead>
 				<tr>
-					<th class="text-center" style="background: #007aff; color: white;">#</th>
-				    <th class="text-center" style="background: #007aff; color: white;">Specialization</th>
-				    <th class="text-center" style="background: #007aff; color: white;">Creation Date</th>
-					<th class="text-center" style="background: #007aff; color: white;">Updation Date</th>
-					<th class="text-center" style="background: #007aff; color: white;">Action</th>
+					<th class="text-center" style="background: #776bab; color: white;">#</th>
+				    <th class="text-center" style="background: #776bab; color: white;">Specialization</th>
+				    <th class="text-center" style="background: #776bab; color: white;">Creation Date</th>
+					<th class="text-center" style="background: #776bab; color: white;">Updation Date</th>
+					<th class="text-center" style="background: #776bab; color: white;">Action</th>
 				</tr>
 			</thead>
             

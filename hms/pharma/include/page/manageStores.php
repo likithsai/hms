@@ -29,7 +29,7 @@
 					?>
 
 					<div class="panel-group mt-2 mb-0">
-						<div class="panel panel-default">
+						<div class="panel">
 						  <div class="panel-heading">
 							<h4 class="panel-title" data-toggle="collapse" href="#collapse<?php echo $row['map_id'];?>">
 								<div class="row">
@@ -48,6 +48,7 @@
 									</div>
 								</div>
 							</h4>
+						  </div>
 						</div>
 							
 						<div id="collapse<?php echo $row['map_id']; ?>" class="panel-collapse collapse">

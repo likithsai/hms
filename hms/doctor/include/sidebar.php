@@ -1,12 +1,3 @@
-<?php
-	include('../../../include/config.php');
-
-	error_reporting(0);
-
-	$count = mysqli_num_rows(mysqli_query($con,"select users.fullName as fname,appointment.*  from appointment join users on users.id=appointment.userId where appointment.doctorId='".$_SESSION['id']."'"));
-	$manage_patient = mysqli_num_rows(mysqli_query($con,"select * from tblpatient where Docid='".$_SESSION['id']."'"));
-
-?>
 
 <div class="sidebar app-aside navbar-fixed-top" id="sidebar">
 	<div class="sidebar-container perfect-scrollbar">
@@ -61,7 +52,7 @@
 						<div class="item-content">
 							<div class="item-media"><i class="ti-list"></i></div>
 							<div class="item-inner">
-								<span class="title"> Appointment History &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="badge bg-success border"><?php echo $count; ?></span></span>
+								<span class="title"> Appointment History</span>
 							</div>
 						</div>
 					</a>

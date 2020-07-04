@@ -86,7 +86,7 @@
 	
 				?>
 				
-			    <div class="panel panel-white" style="border: 1px solid #ccc;">
+			    <div class="panel no-radius box-shadow panel-white" style="border: 1px solid #ccc;">
                     <div class="panel-body">
                         <form role="form" name="adddoc" method="post" onSubmit="return valid();" enctype="multipart/form-data">
 						    <div class="form-group">
@@ -143,7 +143,7 @@
 								<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password" required="required">
 							</div>
 														
-							<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">Submit</button>
+							<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary btn-purple">Submit</button>
 						</form>
 					</div>
 				</div>

@@ -1,10 +1,10 @@
 
 <div class="row">
 	<div class="col-sm-3">
-		<div class="panel panel-white no-radius text-center" style="border: 1px solid #ccc;">
+		<div class="panel panel-white no-radius text-center box-shadow" style="border: 1px solid #ccc;">
 			<div class="panel-body">
 				<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-				<h2 class="StepTitle">Manage Users</h2>
+				<h2 class="StepTitle">Users</h2>
 											
 				<p class="links cl-effect-1">
 					<a href="dashboard.php?page=manageUser">
@@ -21,14 +21,14 @@
 	</div>
                                 
     <div class="col-sm-3">
-		<div class="panel panel-white no-radius text-center" style="border: 1px solid #ccc;">
+		<div class="panel panel-white no-radius text-center box-shadow" style="border: 1px solid #ccc;">
 			<div class="panel-body">
 				<span class="fa-stack fa-2x"> 
                     <i class="fa fa-square fa-stack-2x text-primary"></i> 
                     <i class="fa fa-users fa-stack-1x fa-inverse"></i> 
                 </span>
                     
-                <h2 class="StepTitle">Manage Doctors</h2>						
+                <h2 class="StepTitle">Doctors</h2>						
                     <p class="cl-effect-1">
                     <a href="dashboard.php?page=manageDoctor">
                     <?php 
@@ -44,7 +44,7 @@
 	</div>
         
     <div class="col-sm-3">
-		<div class="panel panel-white no-radius text-center" style="border: 1px solid #ccc;">
+		<div class="panel panel-white no-radius text-center box-shadow" style="border: 1px solid #ccc;">
 			<div class="panel-body">
 				<span class="fa-stack fa-2x"> 
                     <i class="fa fa-square fa-stack-2x text-primary"></i> 
@@ -67,13 +67,13 @@
 	</div>
 
     <div class="col-sm-3">
-		<div class="panel panel-white no-radius text-center" style="border: 1px solid #ccc;">
+		<div class="panel panel-white no-radius text-center box-shadow" style="border: 1px solid #ccc;">
 			<div class="panel-body">
 				<span class="fa-stack fa-2x"> 
                     <i class="fa fa-square fa-stack-2x text-primary"></i> 
                     <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> 
                 </span>
-				<h2 class="StepTitle">Manage Patients</h2>
+				<h2 class="StepTitle">Patients</h2>
 											
 				<p class="links cl-effect-1">
 				    <a href="dashboard.php?page=managePatient">
@@ -90,7 +90,7 @@
 	</div>
 	
 	
-	<div class="col-sm-4">
+	<div class="col-sm-6 box-shadow">
 		<div class="panel-group">
 			<div class="panel panel-default">
 				<div class="panel-heading text-center">Panel Header</div>
@@ -101,7 +101,7 @@
 		</div>
 	</div>
 	
-	<div class="col-sm-4">
+	<div class="col-sm-6">
 		<div class="panel-group">
 			<div class="panel panel-default">
 				<div class="panel-heading text-center">Panel Header</div>
@@ -112,16 +112,6 @@
 		</div>
 	</div>
 	
-	<div class="col-sm-4">
-		<div class="panel-group">
-			<div class="panel panel-default">
-				<div class="panel-heading text-center">Panel Header</div>
-				<div class="panel-body">
-					<canvas height="200"></canvas>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
 
 			

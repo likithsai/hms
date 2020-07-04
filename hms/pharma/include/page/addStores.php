@@ -107,19 +107,24 @@
                     <textarea class="form-control" name="store_desc" rows="5" cols="5" required="true"></textarea>
                 </div>
 
-				<div class="well">
-					<div class="col-md-6 row-no-gutters">
-						<label for="latitude">Latitude : </label>
-						<input type="text" name="store_latitude" id="store_lat" class="form-control" >
+
+				<div class="panel panel-white no-radius box-shadow">
+					<div class="panel-body">
+						<div class="col-md-12">
+							<div class="col-md-6 row-no-gutters">
+								<label for="latitude text-left">Latitude : </label>
+								<input type="text" name="store_latitude" id="store_lat" class="form-control" >
+							</div>
+							
+							<div class="col-md-6 no-padding">
+								<label for="longitude">Longitude : </label>
+								<input type="text" name="store_longitude" id="store_lng" class="form-control" >
+							</div>
+							
+							<div class="col-md-12 text-center" style="padding: 10px !important;">Click Anywhere from Map to get latitude and longitude</div>
+							<div id="map" style="margin-top:10px;"></div>
+						</div>
 					</div>
-					
-					<div class="col-md-6 no-padding">
-						<label for="longitude">Longitude : </label>
-						<input type="text" name="store_longitude" id="store_lng" class="form-control" >
-					</div>
-					
-					<div class="col-md-12 text-center" style="padding: 10px !important;">Click Anywhere from Map to get latitude and longitude</div>
-					<div id="map" style="margin-top:10px;"></div>
 				</div>
 
                 <button type="submit" name="submit" id="submit" class="col-md-12 btn btn-primary">Submit</button>

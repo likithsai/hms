@@ -7,12 +7,9 @@
 		</a>
 						
 		<a class="navbar-brand" href="#">
-			<h2 style="padding-top:20%; color:#000 ">HMS</h2>
+			<h2 style="padding-top:20%; color:#fff ">HMS</h2>
 		</a>
-						
-		<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
-			<i class="ti-align-justify"></i>
-		</a>
+					
 						
 		<a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
 			<span class="sr-only">Toggle navigation</span>

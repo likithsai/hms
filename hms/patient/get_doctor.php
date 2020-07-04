@@ -20,7 +20,7 @@ if(!empty($_POST["doctor"]))
     $sql=mysqli_query($con,"select * from doctors where id='".$_POST['doctor']."'");
     while($row=mysqli_fetch_array($sql)) {
 
-      echo "<div class=\"well col-md-12 margin-top-30\">";
+      echo "<div class=\"panel panel-white no-radius text-center box-shadow col-md-12 margin-top-50\">";
       echo "<div class=\"profile\">";
       echo "<div class=\"col-sm-12\">";
       echo "<div class=\"col-xs-12 col-sm-12\">";

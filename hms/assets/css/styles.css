@@ -92,6 +92,12 @@ body.bg_style_5 {
   color: #ffffff;
 }
 
+
+
+.btn-purple {
+	background: #776bab !important;
+}
+
 ::selection {
   background: #5F8295;
   text-shadow: none;
@@ -362,8 +368,8 @@ h5.over-title {
 }
 .navbar .navbar-header {
   z-index: 10;
-  background: #ffffff;
-  border-bottom: 1px solid #c8c7cc;
+  background: #776bab;
+  color: #fff !important;
   position: relative;
   height: 65px;
 }
@@ -372,11 +378,18 @@ h5.over-title {
     width: 260px;
   }
 }
+
 @media (min-width: 992px) {
   .navbar .navbar-header {
-    border-right: 1px solid #c8c7cc;
+	box-shadow: -6px 4px 8px 0px rgba(0,0,0,0.2);
   }
 }
+
+
+
+.box-shadow { box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important; }
+
+
 .navbar .navbar-header a {
   line-height: 65px;
   height: 65px;
@@ -416,13 +429,15 @@ h5.over-title {
   z-index: -1;
 }
 .navbar .navbar-collapse {
-  border-bottom: 1px solid #c8c7cc;
+  border-bottom: 1px solid #776bab;
   border-top: none;
-  background: #ffffff;
+  background: #776bab;
   padding-left: 15px !important;
   padding-right: 15px !important;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 @media (min-width: 768px) {
   .navbar .navbar-collapse {
     margin-left: 260px;
@@ -873,7 +888,7 @@ h5.over-title {
   float: left;
   left: 0;
   bottom: 0;
-  background: #f7f7f8;
+  background: #FFFFFF;
   overflow: visible;
   z-index: 1051;
 }
@@ -1023,7 +1038,7 @@ h5.over-title {
   background: #efeff0;
 }
 #sidebar > div nav > ul > li.active {
-  background: #c8c7cc;
+  background: #776bab;
 }
 #sidebar > div nav > ul > li.active > a {
   border-top: none !important;
