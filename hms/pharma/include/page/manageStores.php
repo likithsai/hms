@@ -11,16 +11,12 @@
 	include('../../include/checklogin.php');
 ?>
 
+
 <div class="wrap-content container" id="container">
 	<div class="container-fluid container-fullw bg-white">
 		<div class="row">
 			<div class="col-md-12">
-				<p style="color:red;">
-					<?php echo htmlentities($_SESSION['msg']);?>
-					<?php echo htmlentities($_SESSION['msg']="");?>
-				</p>	
-					
-				
+
 					<?php
 
 						$sql = mysqli_query($con, "SELECT * FROM tblmap");

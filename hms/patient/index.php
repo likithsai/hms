@@ -1,5 +1,10 @@
 <?php
 	include( "../include/config.php" );
+	include( "../include/session_controller.php" );
+
+	$session = new session_controller();
+	$session -> write("pass", "pass");
+
 	
 	$error = "";
 	
@@ -13,13 +18,17 @@
 		if( $num > 0 ) {
 		
 			$extra = "dashboard.php?page=dashboard";
-			$_SESSION['login'] = $_POST['username'];
-			$_SESSION['id'] = $num['id'];
+			$session -> write('login', $_POST['username']);;
+			$session -> write('id', $num['id']);
+
+			//$_SESSION['login'] = $_POST['username'];
+			//$_SESSION['id'] = $num['id'];
+			
 			$host = $_SERVER['HTTP_HOST'];
 			$uip = $_SERVER['REMOTE_ADDR'];
 			$status = 1;
 			// For stroing log if user login successfull
-			$log = mysqli_query( $con, "INSERT INTO userlog(uid,username,userip,status) VALUES('".$_SESSION['id']."','".$_SESSION['login']."','$uip','$status' )");
+			//$log = mysqli_query( $con, "INSERT INTO userlog(uid,username,userip,status) VALUES('".$_SESSION['id']."','".$_SESSION['login']."','$uip','$status' )");
 			$uri = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 			header( "location:http://$host$uri/$extra" );
 			exit();

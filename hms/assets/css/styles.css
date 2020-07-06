@@ -95,7 +95,8 @@ body.bg_style_5 {
 
 
 .btn-purple {
-	background: #776bab !important;
+  background: #776bab !important;
+  color: #fff !important;
 }
 
 ::selection {

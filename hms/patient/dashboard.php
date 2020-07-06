@@ -1,5 +1,8 @@
 <?php
 	include('../include/config.php');
+	include( "../include/session_controller.php" );
+
+	$session = new session_controller();
 ?>
 
 <!DOCTYPE html>
@@ -21,55 +24,65 @@
 		<script src="../vendor/jquery/jquery.min.js"></script>
 	</head>
 	<body>
+		
 		<div id="app">		
 			<?php include('include/sidebar.php');?>
 			<div class="app-content">
 				<?php include('include/header.php');?>
 				<div class="main-content" >
+					<?php
 					
-							<?php
-								switch($_GET['page']) {
-									case 'dashboard':
-										include('include/page/dashboard.php');
-										break;
+						switch($_GET['page']) {
+				
+							case 'dashboard':
+								include('include/page/dashboard.php');
+								break;
 
-									case 'appointment':
-										include('include/page/appointment.php');
-										break;
+							case 'appointment':
+								include('include/page/appointment.php');
+								break;
 
-									case 'bookAppointment':
-										include('include/page/bookAppointment.php');
-										break;
+							case 'bookAppointment':
+								include('include/page/bookAppointment.php');
+								break;
 
-									case 'medicalHistory':
-										include('include/page/medicalHistory.php');	
-										break;
+							case 'medicalHistory':
+								include('include/page/medicalHistory.php');	
+								break;
 
-									case 'editProfile':
-										include('include/page/editProfile.php');
-										break;
+							case 'editProfile':
+								include('include/page/editProfile.php');
+								break;
 
-									case 'changePassword':
-										include('include/page/changePassword.php');
-										break;
+							case 'changePassword':
+								include('include/page/changePassword.php');
+								break;
 
-									case 'search':
-										include('include/page/search.php');	
-										break;
+							case 'search':
+								include('include/page/search.php');	
+								break;
 
-									case 'compose':
-										include('include/page/compose.php');
-										break;
+							case 'compose':
+								include('include/page/compose.php');
+								break;
 
-									case 'inbox':
-										include('include/page/inbox.php');
-										break;
+							case 'inbox':
+								include('include/page/inbox.php');
+								break;
 
-									case 'sentMail':
-										include('include/page/sentMail.php');
-										break;
-								}
-							?>
+							case 'sentMail':
+								include('include/page/sentMail.php');
+								break;
+
+							case 'createGroup':
+								include('include/page/createGroup.php');
+								break;
+
+							case 'manageGroup':
+								include('include/page/manageGroup.php');
+								break;
+						}
+					?>
 							
 					
 				</div>

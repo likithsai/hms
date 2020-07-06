@@ -7,9 +7,6 @@
 <?php
 
 	class session_controller {
-	
-		private static $session_timeout = 120;
-		
 		
 		function __construct() {
 			self::init();
@@ -22,20 +19,15 @@
 		
 		
 		public static function init() {
-			if(session_id() == '' || !isset($_SESSION)) {			
-				session_cache_expire(self::$session_timeout);
-				return session_start();
-			}
+			return session_start();
 		}
 		
 		
 		public static function read( $name ) { 
-			self::init();
-			return isset($_SESSION[$name]) ? $_SESSION[$name] : "null";
+			return isset( $_SESSION[$name] ) ? $_SESSION[$name] : "null";
 		}
 		
 		public static function write( $name, $value ) {
-			self::init();
 			$_SESSION[$name] = $value;	
 		}
 		
@@ -55,7 +47,7 @@
 		}
 		
 		public static function printSession() {
-			echo print_r($_SESSION);
+			echo print_r( $_SESSION );
 		}
 		
 	}
