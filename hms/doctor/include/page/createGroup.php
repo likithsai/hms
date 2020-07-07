@@ -94,7 +94,7 @@
 				<p><i class="fa fa-link" aria-hidden="true"></i> <a href="" class="alert-success" target="_blank">https://www.google.com/ascjbascbahs</a><br /></p>
 			</p>
 
-			<a href="#" style="padding: 5px;"><i class="fa fa-user"> </i> Add Users</a> | 
+			<a href="#" style="padding: 5px;"><i class="fa fa-user"></i> Add Users</a> | 
 			<a href="#" style="padding: 5px;"><i class="fa fa-edit"></i> Edit</a> | 
 			<a href="dashboard.php?page=createGroup&deleteid=<?php echo $row['group_id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');" style="padding: 5px;"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
 		  </div>
