@@ -60,14 +60,22 @@
 										break;
 										
 										
-case 'addClinic':
+									case 'addClinic':
 										include( 'include/page/addClinic.php' );
 										break;
 										
-case 'manageClinic':
+									case 'manageClinic':
 										include( 'include/page/manageClinic.php' );
 										break;
 										
+										
+									case 'createGroup':
+										include('include/page/createGroup.php');
+										break;
+
+									case 'manageGroup':
+										include('include/page/manageGroup.php');
+										break;
 									
 										
 										

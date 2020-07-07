@@ -607,6 +607,43 @@ INSERT INTO `userlog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logout`,
 (122, 8, 'likithsai13@gmail.com', '::1\0\0\0\0\0\0\0\0\0\0\0\0\0', '2020-05-04 06:30:28', NULL, 1),
 (123, 8, 'likithsai13@gmail.com', '::1\0\0\0\0\0\0\0\0\0\0\0\0\0', '2020-05-04 06:30:41', '04-05-2020 12:01:19 PM', 1);
 
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `groups`
+--
+
+CREATE TABLE IF NOT EXISTS `tblgroups` (
+  `group_id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_name` varchar(255) NOT NULL,
+  `group_desc` varchar(255) NULL,
+  `group_creator_id` INT(11) NOT NULL,
+  `group_creation_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `group_updation_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`group_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=40 ;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `chats`
+--
+
+CREATE TABLE IF NOT EXISTS `tblchats` (
+  `chats_id` int(11) NOT NULL AUTO_INCREMENT,
+  `chat_message` varchar(255) NOT NULL,
+  `chat_user_id` int(11) NULL,
+  `chat_group_id` INT(11) NOT NULL,
+  `chat_creation_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `chat_updation_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`chats_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=40 ;
+
+
+
+
 -- --------------------------------------------------------
 
 --

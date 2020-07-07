@@ -19,9 +19,27 @@
 				</li>
 				
 				
+				<li class="<?php if($_GET['page'] == "createGroup" || $_GET['page'] == "manageGroup") { echo "active"; } else { echo ""; } ?>">
+					<a href="javascript:void(0)">
+						<div class="item-content">
+							<div class="item-media"><i class="ti-user"></i></div>
+							<div class="item-inner">
+								<span class="title"> Group </span><i class="icon-arrow"></i>
+							</div>
+						</div>
+					</a>
+					<ul class="sub-menu">
+						<li class="<?php if($_GET['page'] == "createGroup") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=createGroup"><span class="title"> Create Group </span></a>
+						</li>	
+						<li class="<?php if($_GET['page'] == "manageGroup") { echo "active"; } else { echo ""; } ?>">
+							<a href="dashboard.php?page=manageGroup"><span class="title"> Manage Group </span></a>
+						</li>					
+					</ul>
+				</li>
 				
 				
-	<li class="<?php if($_GET['page'] == "addClinic" || $_GET['page'] == "manageClinic" ) { echo "active"; } else { echo ""; } ?>">
+				<li class="<?php if($_GET['page'] == "addClinic" || $_GET['page'] == "manageClinic" ) { echo "active"; } else { echo ""; } ?>">
 					<a href="javascript:void(0)">
 						<div class="item-content">
 							<div class="item-media"><i class="fa fa-calendar"></i></div>
