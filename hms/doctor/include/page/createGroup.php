@@ -59,61 +59,38 @@
 		}
 	?>
 	
-	<div class="container-fluid container-fullw bg-white">
-        <div class="row">
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Create Group</button>    
-        </div>
-    </div>
-	
-	<div class="container container-fullw bg-white">
-		<table class="table table-hover table-striped" id="sample-table-1">
-            
-            <tbody>
-            <?php
-                $sql=mysqli_query($con,"SELECT * from tblgroups WHERE group_creator_id = 1");
-                $cnt=1;
-
-                while($row = mysqli_fetch_array($sql)) {
-            ?>
-
-				<tr style = "background: white !important; border: 1px solid #ccc;">
-					<td class="text-center" style="background: #f1f1f1 !important;"><?php echo $cnt;?>.</td>
-					<td class="text-left"><?php echo $row['group_name'] . "\n" . $row['group_desc'];?></td>
-					<td class="text-center">
-						<div class="visible-md visible-lg hidden-sm hidden-xs">
-							<a href="dashboard.php?page=editDoctorSpecialization&id=<?php echo $row['group_id'];?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
-                            <a href="dashboard.php?page=doctorSpecialization&id=<?php echo $row['group_id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
-						</div>
-                                                
-                        <div class="visible-xs visible-sm hidden-md hidden-lg">
-							<div class="btn-group" dropdown is-open="status.isopen">
-								<button type="button" class="btn btn-primary btn-o btn-sm dropdown-toggle" dropdown-toggle>
-									<i class="fa fa-cog"></i>&nbsp;<span class="caret"></span>
-								</button>
-                                                        
-                                <ul class="dropdown-menu pull-right dropdown-light" role="menu">
-									<li>
-										<a href="#">Edit</a>
-									</li>
-                                                            
-                                    <li>
-										<a href="#">Share</a>
-									</li>
-                                    
-                                    <li>
-										<a href="#">Remove</a>
-									</li>
-								</ul>
-							</div>
-                        </div>
-                    </td>
-				</tr>
-                
-                <?php 
-                    $cnt=$cnt+1;
-                }
-                ?>
-			</tbody>
-		</table>
+	<div class="row">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Create Group</button>    
 	</div>
+	
+	<div class="row" style="margin-top: 10px;">
+
+		
+
+		<?php
+            $sql=mysqli_query($con, "SELECT * from tblgroups WHERE group_creator_id = 1");
+
+            while($row = mysqli_fetch_array($sql)) {
+        ?>
+		
+		<div class="card col-md-4">
+		  <div class="card-body">
+			<h4 class="card-title"><i class="fa fa-group"></i> <?php echo $row['group_name']; ?></h4>
+			<p class="card-text text-justify">
+				<?php echo $row['group_desc']; ?>
+				<p><i class="fa fa-link" aria-hidden="true"></i> <a href="" class="alert-success" target="_blank">https://www.google.com/ascjbascbahs</a><br /></p>
+			</p>
+
+			<a href="#" style="padding: 5px;"><i class="fa fa-user"></i> Add Users</a> | 
+			<a href="#" style="padding: 5px;"><i class="fa fa-edit"></i> Edit</a> | 
+			<a href="#" style="padding: 5px;"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
+		  </div>
+		</div>
+		
+		<?php 
+            }
+        ?>
+
+	</div>
+
 </div>
