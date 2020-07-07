@@ -1,9 +1,4 @@
-<?php
-	include('../../include/config.php');
-    include('../../include/checklogin.php');
-	
-	error_reporting(E_ALL);
-	
+<?php	
 	$sql = mysqli_query($con, "SELECT * FROM tblmap") or die('Error querying database.');
     if($sql) {
 	

@@ -6,21 +6,16 @@
 
 
 <?php
-	session_start();
-	include('../../include/config.php');
-	include('../../include/checklogin.php');
+	//session_start();
+	//include('../../include/config.php');
+	//include('../../include/checklogin.php');
 ?>
 
 <div class="wrap-content container" id="container">
 	<div class="container-fluid container-fullw bg-white">
 		<div class="row">
 			<div class="col-md-12">
-				<p style="color:red;">
-					<?php echo htmlentities($_SESSION['msg']);?>
-					<?php echo htmlentities($_SESSION['msg']="");?>
-				</p>	
-					
-				
+
 					<?php
 
 						// pagination 

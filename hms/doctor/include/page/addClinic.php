@@ -1,8 +1,8 @@
 
 <?php
 
-	include('../../include/config.php');
-    include('../../include/checklogin.php');
+	//include('../../include/config.php');
+    //include('../../include/checklogin.php');
 	
 	$msg = "";
 	
