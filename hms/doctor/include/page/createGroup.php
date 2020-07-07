@@ -1,6 +1,7 @@
 <?php
 	$msg = "";
 	
+	// group create snippet
 	if( isset($_POST['submit']) ) {	
 		$group_name = $_POST['group_name'];
 		$group_desc = $_POST['group_desc'];
@@ -11,6 +12,18 @@
         }
 		
 		echo mysqli_error($con);
+	}
+	
+	
+	// delete group
+	if( isset($_GET['deleteid']) ) {
+		$did = $_GET['deleteid'];
+		
+		$sql = mysqli_query($con, "DELETE FROM tblgroups WHERE group_id=$did");
+		if($sql) {
+            $msg = "Group Deleted";
+        }
+		
 	}
 ?>
 
@@ -75,15 +88,15 @@
 		
 		<div class="card col-md-4">
 		  <div class="card-body">
-			<h4 class="card-title"><i class="fa fa-group"></i> <?php echo $row['group_name']; ?></h4>
+			<h4 class="card-title"><i class="fa fa-group"> </i> <?php echo $row['group_name']; ?></h4>
 			<p class="card-text text-justify">
 				<?php echo $row['group_desc']; ?>
 				<p><i class="fa fa-link" aria-hidden="true"></i> <a href="" class="alert-success" target="_blank">https://www.google.com/ascjbascbahs</a><br /></p>
 			</p>
 
-			<a href="#" style="padding: 5px;"><i class="fa fa-user"></i> Add Users</a> | 
+			<a href="#" style="padding: 5px;"><i class="fa fa-user"> </i> Add Users</a> | 
 			<a href="#" style="padding: 5px;"><i class="fa fa-edit"></i> Edit</a> | 
-			<a href="#" style="padding: 5px;"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
+			<a href="dashboard.php?page=createGroup&deleteid=<?php echo $row['group_id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');" style="padding: 5px;"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
 		  </div>
 		</div>
 		
