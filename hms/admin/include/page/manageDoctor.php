@@ -6,30 +6,26 @@
 
     if( isset( $_GET['del'] ) ) {
 	
-		mysqli_query( $con, "delete from doctors where id = '".$_GET['id']."'" );
+		mysqli_query( $con, "DELETE FROM doctors WHERE id = '".$_GET['id']."'" );
         $msg = "data deleted !!";
 	
 	}
 
 
 
-
-
 	// form submit
-	if(isset($_POST['submit'])) {	
+	if( isset( $_POST['submit'] ) ) {	
 	
-		if(!empty($_FILES["image"]["name"])) { 
+		if( !empty($_FILES["image"]["name"]) ) { 
 		
-			$fileName = basename($_FILES["image"]["name"]); 
-			$fileType = pathinfo($fileName, PATHINFO_EXTENSION);
+			$fileName = basename( $_FILES["image"]["name"] ); 
+			$fileType = pathinfo( $fileName, PATHINFO_EXTENSION );
 			
 			// Allow certain file formats 
-			$allowTypes = array('jpg','png','jpeg','gif'); 
-			if(in_array($fileType, $allowTypes)){ 
-			
+			$allowTypes = array( 'jpg', 'png', 'jpeg', 'gif' ); 
+			if( in_array( $fileType, $allowTypes ) ){ 
 				$image = $_FILES['image']['tmp_name']; 
-				$imgContent = addslashes(file_get_contents($image)); 
-				
+				$imgContent = addslashes( file_get_contents( $image ) ); 
 			}
 			
 		}
@@ -41,12 +37,12 @@
 		$doccontactno = $_POST['doccontact'];
 		$docemail = $_POST['docemail'];
 		$password = md5($_POST['npass']);
-		$sql = mysqli_query($con, "insert into doctors(specilization,doctorName,address,docFees,contactno,docEmail,password, profile_pic) values('$docspecialization','$docname','$docaddress','1000','$doccontactno','$docemail','$password','$imgContent')");
+		$sql = mysqli_query($con, "INSERT INTO doctors(specilization, doctorName, address, docFees, contactno, docEmail, password, profile_pic) VALUES ('$docspecialization', '$docname', '$docaddress', '1000', '$doccontactno', '$docemail', '$password', '$imgContent')");
 	
-		if($sql) {
+		echo mysqli_error($con);
 		
+		if($sql) {
 			$msg = "Doctor Added successfully!";
-			
 		} else {
 			$msg = mysqli_query($con);
 		}
@@ -86,7 +82,7 @@
 
 <!-- Create Specialization modal -->
 <div class="modal" id="myModal">
-	<form role="form" name="adddoc" method="post" onSubmit="return valid();" enctype="multipart/form-data">
+	<form role="form" method="post" onSubmit="return valid();" enctype="multipart/form-data">
 		<div class="modal-dialog" style="margin: 100px auto;">
 			
 			<div class="modal-content">
@@ -112,9 +108,16 @@
 						</select>
 					</div>
 
-					<div class="form-group">
-						<label for="doctorname">Doctor Name</label>
-						<input type="text" name="docname" class="form-control"  placeholder="Enter Doctor Name" required="true">
+					<div class="col-md-12 pl-0 pr-0">
+						<div class="form-group col-md-6 pl-0">
+							<label for="doctorname">Doctor Name</label>
+							<input type="text" name="docname" class="form-control"  placeholder="Enter Doctor Name" required="true">
+						</div>
+
+						<div class="form-group col-md-6 pl-0 pr-0">
+							<label for="fess">Doctor Contact no</label>
+							<input type="text" name="doccontact" class="form-control"  placeholder="Enter Doctor Contact no" required="true">
+						</div>
 					</div>
 
 					<div class="form-group">
@@ -127,24 +130,13 @@
 						<input type="text" name="docfees" class="form-control"  placeholder="Enter Doctor Consultancy Fees" required="true">
 					</div> -->
 		
-					<div class="col-md-12 p-0">
-						<div class="form-group col-md-6 pl-0">
-							<label for="fess">Doctor Contact no</label>
-							<input type="text" name="doccontact" class="form-control"  placeholder="Enter Doctor Contact no" required="true">
-						</div>
-
-						<div class="form-group col-md-6 p-0">
-							<label for="fess">Doctor Email</label>
-							<input type="email" id="docemail" name="docemail" class="form-control"  placeholder="Enter Doctor Email id" required="true" onBlur="checkemailAvailability()">
-							<span id="email-availability-status"></span>
-						</div>
-					</div>
 					
 					<div class="form-group">
-						<label for="exampleInputPassword1">Profile Pic</label>
-						<input type="file" name="image" class="form-control"  placeholder="Upload File" required="required">
+						<label for="fess">Doctor Email</label>
+						<input type="email" id="docemail" name="docemail" class="form-control"  placeholder="Enter Doctor Email id" required="true" onBlur="checkemailAvailability()">
+						<span id="email-availability-status"></span>
 					</div>
-
+					
 					<div class="col-md-12 p-0">
 						<div class="form-group col-md-6 pl-0">
 							<label for="exampleInputPassword1">Password</label>
@@ -156,6 +148,12 @@
 							<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password" required="required">
 						</div>
 					</div>
+					
+					<div class="form-group">
+						<label for="exampleInputPassword1">Profile Pic</label>
+						<input type="file" name="image" class="form-control"  placeholder="Upload File" required="required">
+					</div>
+
 				</div>
 			
 

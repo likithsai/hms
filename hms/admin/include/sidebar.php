@@ -28,12 +28,12 @@
 							<a href="dashboard.php?page=doctorSpecialization"><span class="title"> Doctor Specialization </span></a>
 						</li>
 										
-						<li class="<?php if($_GET['page'] == "addDoctor") { echo "active"; } else { echo ""; } ?>">
+						<!-- <li class="<?php if($_GET['page'] == "addDoctor") { echo "active"; } else { echo ""; } ?>">
 							<a href="dashboard.php?page=addDoctor"><span class="title"> Add Doctor</span></a>
-						</li>
+						</li> -->
 										
 						<li class="<?php if($_GET['page'] == "manageDoctor") { echo "active"; } else { echo ""; } ?>">
-							<a href="dashboard.php?page=manageDoctor"><span class="title"> Manage Doctors </span></a>
+							<a href="dashboard.php?page=manageDoctor"><span class="title"> Doctors </span></a>
 						</li>
 										
 					</ul>
