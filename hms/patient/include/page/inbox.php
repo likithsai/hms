@@ -1,6 +1,3 @@
-
-
-
 <div class="wrap-content container" id="container">
 	<div class="container-fluid container-fullw bg-white">
 		<div class="row">

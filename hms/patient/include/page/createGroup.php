@@ -1,5 +1,5 @@
 <?php
-    include('../include/config.php');
+    //include('../include/config.php');
 ?>
 
 <!-- The Modal -->

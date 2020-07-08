@@ -5,8 +5,8 @@
 -->
 
 <?php
-    include('../../include/config.php');
-    include('../../include/checklogin.php');
+    //include('../../include/config.php');
+    //include('../../include/checklogin.php');
 
     if(isset($_POST['submit'])) {   
         if(!empty($_FILES["image"]["name"])) { 

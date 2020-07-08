@@ -1,5 +1,5 @@
 <?php
-	include( "../include/config.php" );
+	//include( "../include/config.php" );
 ?>
 	
 <div class="wrap-content container" id="container">

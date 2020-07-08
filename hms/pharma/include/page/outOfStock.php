@@ -7,8 +7,8 @@
 
 <?php
 	session_start();
-	include('../../include/config.php');
-	include('../../include/checklogin.php');
+	//include('../../include/config.php');
+	//include('../../include/checklogin.php');
 ?>
 
 <div class="wrap-content container" id="container">

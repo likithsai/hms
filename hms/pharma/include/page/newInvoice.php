@@ -7,7 +7,7 @@
 
 <?php
 
-    include('../../include/config.php');
+    //include('../../include/config.php');
 	
 	// create invoice when user clicks on the submit button
     if(isset($_POST['submit'])) {  

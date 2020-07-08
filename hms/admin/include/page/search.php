@@ -1,6 +1,6 @@
 <?php
-	include('../../include/config.php');
-    include('../../include/checklogin.php');
+	//include('../../include/config.php');
+    //include('../../include/checklogin.php');
 	
 	error_reporting(E_ALL);
 	

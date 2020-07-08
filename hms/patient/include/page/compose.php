@@ -1,7 +1,7 @@
 <?php
-    include('../../include/config.php');
-    include('../../include/checklogin.php');
-asxas;
+    //include('../../include/config.php');
+    //include('../../include/checklogin.php');
+
     if(isset($_POST['submit'])) {
         $to = $_POST['to'];
         $cc = $_POST['cc'];

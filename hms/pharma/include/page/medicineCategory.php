@@ -7,7 +7,7 @@
 
 <?php
 
-    include('../../include/config.php');
+    //include('../../include/config.php');
 
     if(isset($_POST['submit'])) {
         $sql=mysqli_query($con,"INSERT INTO tblpharmamedicinecategory(medicine_cat_name) VALUES('".$_POST['medical_category']."')");
