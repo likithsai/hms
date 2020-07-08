@@ -15,6 +15,9 @@
 
 	// form submit
 	if( isset( $_POST['submit'] ) ) {	
+
+		$target_dir = "../../uploads/";
+		$target_file = $target_dir . time();
 	
 		if( !empty($_FILES["image"]["name"]) ) { 
 		
@@ -25,7 +28,7 @@
 			$allowTypes = array( 'jpg', 'png', 'jpeg', 'gif' ); 
 			if( in_array( $fileType, $allowTypes ) ){ 
 				$image = $_FILES['image']['tmp_name']; 
-				$imgContent = addslashes( file_get_contents( $image ) ); 
+				//$imgContent = addslashes( file_get_contents( $image ) ); 
 			}
 			
 		}
@@ -37,14 +40,17 @@
 		$doccontactno = $_POST['doccontact'];
 		$docemail = $_POST['docemail'];
 		$password = md5($_POST['npass']);
-		$sql = mysqli_query($con, "INSERT INTO doctors(specilization, doctorName, address, docFees, contactno, docEmail, password, profile_pic) VALUES ('$docspecialization', '$docname', '$docaddress', '1000', '$doccontactno', '$docemail', '$password', '$imgContent')");
-	
-		echo mysqli_error($con);
+
+		if( move_uploaded_file($image, $target_file) ) {
+			//$sql = mysqli_query($con, "INSERT INTO doctors(specilization, doctorName, address, docFees, contactno, docEmail, password, profile_pic) VALUES ('$docspecialization', '$docname', '$docaddress', '1000', '$doccontactno', '$docemail', '$password', '$imgContent')");
+			$sql = mysqli_query($con, "INSERT INTO doctors(specilization, doctorName, address, docFees, contactno, docEmail, password, profile_pic) VALUES ('$docspecialization', '$docname', '$docaddress', '1000', '$doccontactno', '$docemail', '$password', '$target_file')");
+			echo mysqli_error($con);
 		
-		if($sql) {
-			$msg = "Doctor Added successfully!";
-		} else {
-			$msg = mysqli_query($con);
+			if($sql) {
+				$msg = "Doctor Added successfully!";
+			} else {
+				$msg = mysqli_query($con);
+			}
 		}
 		
 	}

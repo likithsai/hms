@@ -1,10 +1,13 @@
 <?php
     session_start();
-    include( '../../include/config.php' );
+    //include( '../../include/config.php' );
 
     $did = intval( $_GET['id'] );// get doctor id
     
 	if( isset( $_POST['submit'] ) ) {
+
+		$target_dir = "../../uploads/";
+		$target_file = $target_dir . time();
         
 		if( !empty( $_FILES["image"]["name"] ) ) {
 		
@@ -16,7 +19,7 @@
 			if( in_array( $fileType, $allowTypes ) ) {
 			
 				$image = $_FILES['image']['tmp_name']; 
-				$imgContent = addslashes(file_get_contents($image)); 
+				//$imgContent = addslashes(file_get_contents($image)); 
 				
 			}
 			
@@ -29,25 +32,26 @@
         $doccontactno = $_POST['doccontact'];
         $docemail = $_POST['docemail'];
 
-        $sql = mysqli_query($con,"Update doctors set specilization='$docspecialization',doctorName='$docname',address='$docaddress',docFees='$docfees',contactno='$doccontactno',docEmail='$docemail', profile_pic='$imgContent' where id='$did'");
-        if($sql) {
-		
-            $msg="Doctor Details updated Successfully";
-        
+		if( move_uploaded_file($image, $target_file) ) {
+			$sql = mysqli_query($con, "UPDATE doctors SET specilization='$docspecialization', doctorName='$docname', address='$docaddress', docFees='$docfees', contactno='$doccontactno', docEmail='$docemail', profile_pic='$target_file' WHERE id = '$did'");
+			if($sql) {
+				$msg="Doctor Details updated Successfully";
+			}
 		}
+
     }
 ?>
 
 <div class="row">
 	<div class="col-md-12">
-		<h5 style="color: green; font-size:18px; "><?php if($msg) { echo htmlentities($msg);}?></h5>
+		<h5 style="color: green; font-size:18px; "><?php if($msg) { echo htmlentities($msg); } ?></h5>
 		<div class="row margin-top-30">
 			<div class="col-lg-8 col-md-12">
 				<div class="panel panel-white" style="border: 1px solid #ccc;">
 					<div class="panel-body">
                         <?php 
-                            $sql=mysqli_query($con,"select * from doctors where id='$did'");
-                            while($data=mysqli_fetch_array($sql)) {
+                            $sql = mysqli_query($con, "SELECT * FROM doctors WHERE id = '$did'");
+                            while( $data = mysqli_fetch_array($sql) ) {
                         ?>
 
                         <h4><?php echo htmlentities($data['doctorName']);?>'s Profile</h4>
@@ -67,7 +71,7 @@
 							    <select name="Doctorspecialization" class="form-control" required="required">
 					                <option value="<?php echo htmlentities($data['specilization']);?>"><?php echo htmlentities($data['specilization']);?></option>
                                     <?php 
-                                        $ret=mysqli_query($con,"select * from doctorspecilization");
+                                        $ret=mysqli_query($con,"SELECT * FROM doctorspecilization");
                                         while($row=mysqli_fetch_array($ret)) {
                                     ?>
 									<option value="<?php echo htmlentities($row['specilization']);?>"><?php echo htmlentities($row['specilization']);?></option>
@@ -102,7 +106,7 @@
 
                             <div class="form-group">
 								<label for="exampleInputPassword1">Profile Pic</label><br/>
-                                <img width="100" height="100"  src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($data['profile_pic']); ?>" /> 
+                                <img width="100" height="100"  src="<?php echo $data['profile_pic']; ?>" /> 
 					            <input type="file" name="image" class="form-control"  placeholder="Upload File" required="required">
 							</div>
                         
