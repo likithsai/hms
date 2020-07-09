@@ -13,7 +13,16 @@
 ?>
 
 
-<div class="row">
+<div class="row mb-4">
+	<div class="col-md-8 text-left">
+	<h1><b>Users</b></h1>
+	</div>
+	<div class="col-md-4 text-right">
+		<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-o btn-primary btn-purple"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp; Add Users</button>
+	</div>
+</div>
+
+<div>
 		<?php
 				
 		if( !empty( $msg ) ) {
@@ -25,7 +34,7 @@
 		?>
 </div>
 
-<div class="row" style="margin-top: 10px;">
+<div class="mt-1">
 
 		<?php
             $sql=mysqli_query($con, "SELECT * FROM users");

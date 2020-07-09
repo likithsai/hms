@@ -90,7 +90,7 @@
 	</div>
 	
 	
-	<div class="col-sm-6 box-shadow">
+	<div class="col-sm-6">
 		<div class="panel-group">
 			<div class="panel panel-default">
 				<div class="panel-heading text-center">Panel Header</div>
@@ -99,19 +99,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="col-sm-6">
-		<div class="panel-group">
-			<div class="panel panel-default">
-				<div class="panel-heading text-center">Panel Header</div>
-				<div class="panel-body">
-					<canvas style="width: 100%; height: 100%;"></canvas>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+	</div>	
 </div>
 
 			

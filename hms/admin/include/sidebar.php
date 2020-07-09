@@ -40,36 +40,25 @@
 				</li>
 
 				<li class="<?php if($_GET['page'] == "manageUser") { echo "active"; } else { echo ""; } ?>">
-					<a href="javascript:void(0)">
+					<a href="dashboard.php?page=manageUser">
 						<div class="item-content">
 							<div class="item-media"><i class="ti-user"></i></div>
 							<div class="item-inner">
-								<span class="title"> Users </span><i class="icon-arrow"></i>
+								<span class="title"> Users </span>
 							</div>
 						</div>
 					</a>
-
-					<ul class="sub-menu">
-						<li class="<?php if($_GET['page'] == "manageUser") { echo "active"; } else { echo ""; } ?>">
-							<a href="dashboard.php?page=manageUser"><span class="title"> Manage Users </span></a>
-						</li>					
-					</ul>
 				</li>
 									
 				<li class="<?php if($_GET['page'] == "managePatient") { echo "active"; } else { echo ""; } ?>">
-					<a href="javascript:void(0)">
+					<a href="dashboard.php?page=managePatient">
 						<div class="item-content">
 							<div class="item-media"><i class="ti-user"></i></div>
 							<div class="item-inner">
-								<span class="title"> Patients </span><i class="icon-arrow"></i>
+								<span class="title"> Patients </span>
 							</div>
 						</div>
 					</a>
-					<ul class="sub-menu">
-						<li class="<?php if($_GET['page'] == "managePatient") { echo "active"; } else { echo ""; } ?>">
-							<a href="dashboard.php?page=managePatient"><span class="title"> Manage Patients </span></a>
-						</li>	
-					</ul>
 				</li>	
 
 				<li class="<?php if($_GET['page'] == "addStore" || $_GET['page'] == "manageStore" ) { echo "active"; } else { echo ""; } ?>">
