@@ -63,6 +63,8 @@
 </div>
 
 <div class="wrap-content container" id="container">
+
+	<div class="row">
 	<?php
 					
 		if( !empty( $msg ) ) {
@@ -71,6 +73,7 @@
 			echo "</div>";
 		}
 	?>
+	</div>
 	
 	<div class="row">
 		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Create Group</button>    
@@ -91,7 +94,7 @@
 			<h4 class="card-title"><i class="fa fa-group"> </i> <?php echo $row['group_name']; ?></h4>
 			<p class="card-text text-justify">
 				<?php echo $row['group_desc']; ?>
-				<p><i class="fa fa-link" aria-hidden="true"></i> <a href="" class="alert-success" target="_blank">https://www.google.com/ascjbascbahs</a><br /></p>
+				<p><a href="<?php echo GROUP_LINK . "?id=" . $row['group_id']; ?>" class="alert-success" target="_blank"><?php echo GROUP_LINK . "?id=" . $row['group_id']; ?></a><br /></p>
 			</p>
 
 			<a href="#" style="padding: 5px;"><i class="fa fa-user"></i> Add Users</a> | 
