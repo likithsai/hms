@@ -1,2 +1,3 @@
-# Hospital Management System
-simple code for hospital management system
+# Hospital Management System #
+Simple code for Hospital Management System
+Easy to understand
